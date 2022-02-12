@@ -8,6 +8,8 @@
     margin: 0 auto;
     color: #3D3D3D;
     padding: 10px;
+    font-size: 16px;
+    line-height: 1.5em;
 }
 
 .sb_tit{
@@ -21,7 +23,7 @@
 .img_sb{
     text-align: center;
     background-color: whitesmoke;
-    color: lightgrey;
+    color: rgb(133, 128, 128);
     margin: 30px;
     padding: 15px;
 }
@@ -40,4 +42,69 @@
     max-width: 275px;
     float: right;
 
+}
+.disp_inl{
+    display: inline;
+}
+
+.cont_disp{
+    display: flex;
+}
+
+.sb_fot{
+    padding: 1.75em 0px;
+    font-size: 1.1em;
+}
+
+.sb_fot img{
+    width: 96px;
+}
+
+.ender{
+    margin-left: 15px;
+}
+
+.telefs{
+    margin-left: 30px;  
+}
+
+@media (max-width: 850px){
+
+    .cont_disp{
+        display: block;
+    }
+
+    .telefs{
+        margin-top: 30px;
+        margin-left: 15px; 
+    }
+
+}
+
+@media (max-width: 662px){
+
+.familia{
+    float: none;
+    margin: 0 auto;
+}
+
+}
+
+
+/*--Utilitárias--*/
+
+.mar-top-15{
+    margin-top: 15px;
+}
+.mar-left-15{
+    margin-left: 15px;
+}
+.pad-left-15{
+    padding-left: 15px;
+}
+.mar-left-30{
+    margin-left: 30px;
+}
+.pad-left-30{
+    padding-left: 30px;
 }
