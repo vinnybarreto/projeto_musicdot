@@ -68,6 +68,29 @@
     margin-left: 30px;  
 }
 
+.contato{
+    margin-top: 15px;
+    padding-left: 30px;
+}
+
+@media (max-width: 446px) {
+    .disp_inl{
+        display: block;
+        margin-bottom: 0px;
+}
+
+.contato{
+    padding-left: 5px;
+    border-left: 2px solid lightgray;
+    font-size: 0.92em;
+}
+
+.sb_fot{
+    font-size: ;
+}
+    
+}
+
 @media (max-width: 850px){
 
     .cont_disp{
