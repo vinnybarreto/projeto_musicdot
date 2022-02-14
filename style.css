@@ -71,6 +71,23 @@
 .contato{
     margin-top: 15px;
     padding-left: 30px;
+    margin-bottom: 0px;
+}
+.jurid{
+    margin-top: 0px;
+}
+
+.copy{
+    display: inline;
+    padding-left: 15px;
+}
+
+@media (max-width: 342px) {
+    .det_telefs{
+        display: block;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 446px) {
@@ -106,11 +123,17 @@
 
 @media (max-width: 662px){
 
-.familia{
+    .familia{
     float: none;
     margin: 0 auto;
+    }
 }
 
+/*página index*/
+
+.ind_body{
+    margin: 0px;
+    padding: 0px;
 }
 
 
