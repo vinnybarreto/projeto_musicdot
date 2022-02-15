@@ -213,12 +213,20 @@ footer h2{
     text-transform: uppercase;
 }
 
-footer{
+.rodape{
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: 20px;
 } 
 
+.end_social_img{
+    width: 11.5em;
+    margin-bottom: 10px;
+}
+
+.ico_soc{
+    display: flex;
+}
 
 /*--Utilitárias--*/
 
