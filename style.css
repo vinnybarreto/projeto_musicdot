@@ -125,6 +125,8 @@
     .menu{
         display: flex;
     }
+
+
 }
 
 @media (max-width: 662px){
@@ -142,8 +144,7 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-    }   
-
+    } 
 }
 
 
@@ -156,6 +157,17 @@
     .telefs{
         margin-top: 30px;
         margin-left: 15px; 
+    }
+}
+
+@media (min-width: 960px){
+    .navega{
+        padding: 0px 10%;
+    }
+
+    .matricula{
+        background-color: #E93D50;
+        border-radius: 6px;
     }
 }
 
@@ -180,7 +192,7 @@
     padding: 1.5em 0px;
     width: 145px;
 }
-.cabeçalho li{
+.cabeçalho li, .cursos li, .conteudos li{
     list-style: none;
 }
 
@@ -189,13 +201,23 @@
     color: #fff;
 }
 
-.cabeçalho ul{
+.cabeçalho ul, .cursos ul, .conteudos ul{
     padding-left: 0px;
 }
 
 .menu li{
     padding: 15px;
 }
+
+footer h2{
+    text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 20px;
+} 
 
 
 /*--Utilitárias--*/
