@@ -225,8 +225,21 @@ footer h2{
 }
 
 .ico_soc{
-    display: flex;
+    margin: 10px 10px 20px 10px;
 }
+
+.ico_soc img{
+    padding: 5px;
+}
+
+.cursos, .conteudos, .novidades {
+    margin-top: 30px;
+}
+
+.cursos h2, .conteudos h2, .novidades h2{
+    margin: 0px;
+}
+
 
 /*--Utilitárias--*/
 
