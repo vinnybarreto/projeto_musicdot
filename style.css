@@ -133,6 +133,10 @@
         font-size: 1em;
     }
 
+    .end_social, .cursos, .conteudos, .novidades{
+        width: 300px;
+    }
+
 }
 
 @media (max-width: 662px){
