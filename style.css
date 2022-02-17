@@ -240,6 +240,16 @@ footer h2{
     margin: 0px;
 }
 
+.lançamentos{
+    padding: 10px;
+    color: #fff;
+    background-color: #E93D50;
+}
+
+.formulario{
+ display: flex;
+}
+
 
 /*--Utilitárias--*/
 
