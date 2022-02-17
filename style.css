@@ -126,6 +126,12 @@
         display: flex;
     }
 
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 1em;
+    }
 
 }
 
@@ -234,8 +240,9 @@ footer h2{
     padding: 5px;
 }
 
-.cursos, .conteudos, .novidades {
+.end_social, .cursos, .conteudos, .novidades {
     margin-top: 30px;
+    padding: 0px 30px;
 }
 
 .cursos h2, .conteudos h2, .novidades h2{
