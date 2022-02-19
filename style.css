@@ -83,7 +83,7 @@
     padding-left: 15px;
 }
 
-/*página index*/
+/*---Página index---*/
 
 .ind_body{
     font-family: 'Montserrat', sans-serif;
@@ -91,6 +91,7 @@
     padding: 0px;
 }
 
+/*--Cabeçalho--*/
 .cabeçalho{
     background-color: #2D5377;
     text-align: center;
@@ -103,7 +104,7 @@
     padding: 1.5em 0px;
     width: 145px;
 }
-.cabeçalho li, .cursos li, .conteudos li{
+.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li{
     list-style: none;
 }
 
@@ -112,13 +113,126 @@
     color: #fff;
 }
 
-.cabeçalho ul, .cursos ul, .conteudos ul{
+.cabeçalho ul, .cursos ul, .conteudos ul, .lista_cursos{
     padding-left: 0px;
+}
+
+.menu{
+    margin-bottom: 0px;
 }
 
 .menu li{
     padding: 15px;
 }
+/*----*/
+
+/*--Conteúdo principal--*/
+
+.cont_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("imagens/home-background-mobile.png");
+    background-size: cover; /*Cobre tela inteira*/
+    color: #fff;
+    text-align: center;
+    padding-top: 3.5em;
+}
+
+.princ_titulo{
+    margin: 0px;
+}
+
+.chamada_cursos{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+}
+
+.chamada_cursos p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.matricula_bt{
+    display: inline-flex;
+    background-color: #E93D50;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px;
+    margin: 8px 0px;
+    border-radius: 6px;
+    transition: 0.25s; /*tempo de retorno a posição normal*/
+}
+
+.matricula_bt:hover{
+    transform: translate(0, 3px); /*deslocamento do botão*/
+    transition: 0.25s; /*tempo de deslocamento no eixo Y*/
+}
+
+
+.lista_cursos{
+    display: grid;
+    grid-template-rows: repeat(5, 4.5em);
+    grid-template-columns: repeat(2, 7em);
+    grid-gap: 8px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+}
+
+.lista_cursos li{
+    /*display: flex;
+    align-items: center;*/
+    border: 1px solid #4286f4;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: 3em 3em;
+    background-position: top 11px center;
+    font-weight: 600;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.tec_piano{
+    background-image: url("imagens/icone-teclado-piano.svg");
+
+}
+
+.vio_guitarra{
+    background-image: url("imagens/icones-violao-guitarra.svg");
+}
+.baixo{
+    background-image: url("imagens/icones-baixo.svg");
+}
+.bateria{
+    background-image: url("imagens/icones-bateria.svg");
+}
+.percusa{
+    background-image: url("imagens/icones-percussao.svg");
+}
+.canto{
+    background-image: url("imagens/icones-canto.svg");
+}
+.audio{
+    background-image: url("imagens/icones-audio.svg");
+}
+.teoria{
+    background-image: url("imagens/icones-teoria.svg");
+}
+.sopro{
+    background-image: url("imagens/icones-sopro.svg")
+}
+.cordas{
+    background-image: url("imagens/icone-cordas.svg")
+}
+
+/*--Rodapé--*/
 
 footer h2{
     text-transform: uppercase;
@@ -158,8 +272,6 @@ footer h2{
     margin-bottom: 15px;
 }
 
-/*--Formulário Newsletter--*/
-
 .formulario{
     display: flex;
     margin: auto;
@@ -183,19 +295,7 @@ footer h2{
     border: none;
     font-weight: 600;
    }
-
-/*
-.lançamentos{
-    padding: 10px;
-    color: #fff;
-    background-color: #E93D50;
-}
-
-.formulario{
- display: flex;
-}
-*/
-
+/*------*/
 
 /*--Utilitárias--*/
 
@@ -213,6 +313,10 @@ footer h2{
 }
 .pad-left-30{
     padding-left: 30px;
+}
+
+.tomate{
+    color: #E93D50;
 }
 
 
