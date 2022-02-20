@@ -427,6 +427,39 @@ footer h2{
         font-size: 1em;
     }
 
+    .matricula_bt{
+        display: none;
+    }
+
+    .cont_principal{
+        align-items: flex-start;
+    }
+
+    .chamada_cursos{
+        width: 300px;
+        margin: 0;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .princ_titulo{
+        font-size: 2em;
+    }
+
+    .lista_cursos{
+        grid-template-rows: repeat(3, 5.5em);
+        grid-template-columns: repeat(5, 7em);
+        grid-gap: 13px;
+    }
+    .lista_cursos li{
+        padding-top: 60px;
+        background-position: top 18px center;
+    }
+
+    .bateria{
+        order: -1;
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+    }
 }
 
 @media (min-width: 960px){
