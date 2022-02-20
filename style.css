@@ -364,7 +364,7 @@ footer h2{
     margin: 0 auto;
     }
 
-    .cabeçalho nav{
+    /*.cabeçalho nav{
         background-color: #272B3A87;
     } 
 
@@ -372,7 +372,7 @@ footer h2{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-    } 
+    } */
 }
 
 @media (max-width: 850px){
@@ -385,9 +385,19 @@ footer h2{
         margin-top: 30px;
         margin-left: 15px; 
     }
+
+    .cabeçalho nav{
+        background-color: #272B3A87;
+    } 
+
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    } 
 }
 
-@media (min-width: 662px){
+@media (min-width: 850px){
     .navega{
         height: 80px;
         display: flex;
@@ -432,7 +442,10 @@ footer h2{
     }
 
     .cont_principal{
-        align-items: flex-start;
+        background-image: url("imagens/home-background.png");
+        background-size: 100%;
+        align-items: center;
+        padding: 6em 5% 0px;
     }
 
     .chamada_cursos{
@@ -440,6 +453,7 @@ footer h2{
         margin: 0;
         align-items: flex-start;
         text-align: left;
+        align-self: flex-start;
     }
     .princ_titulo{
         font-size: 2em;
@@ -455,10 +469,12 @@ footer h2{
         background-position: top 18px center;
     }
 
-    .bateria{
-        order: -1;
-        grid-column: 1 / 3;
-        grid-row: 1 / 4;
+    .lista_cursos > .bateria{
+        /*order: -1;*/
+        grid-area: 1/1/span 3/3;
+        background-size: 10em 10em;
+        background-position: top 60px center;
+        padding-top: 184px;
     }
 }
 
@@ -473,7 +489,7 @@ footer h2{
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1140px){
     .rodape{
         padding: 5% 15px;
         text-align: left;
@@ -495,6 +511,19 @@ footer h2{
         order: 3;
     }
 
+    .lista_cursos{
+        grid-template-rows: repeat(2, 7.5em);
+        grid-template-columns: repeat(6, 9.3em);
+    }
+
+    .lista_cursos > .bateria{
+        grid-area: 1/1/span 2;
+    }
+
+    .lista_cursos > .canto{
+        grid-area: 1/4/span 2;
+        
+    }
 }
 
 
