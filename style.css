@@ -454,6 +454,7 @@ footer h2{
         align-items: flex-start;
         text-align: left;
         align-self: flex-start;
+        padding-left: 2.5em;
     }
     .princ_titulo{
         line-height: 33px;
@@ -513,6 +514,16 @@ footer h2{
         order: 3;
     }
 
+    .chamada_cursos{
+        width: 450px;
+        padding-left: 1.5em;
+    }
+
+    .princ_titulo{
+        font-size: 2.5em;
+        line-height: 40px;
+    }
+
     .lista_cursos{
         grid-template-rows: repeat(2, 7.5em);
         grid-template-columns: repeat(6, 9.3em);
@@ -528,6 +539,11 @@ footer h2{
 }
 
 @media (min-width: 1440px){
+
+    .chamada_cursos{
+
+        padding-left: 3.5em;
+    }
     .lista_cursos{
         grid-template-rows: repeat(2, 7.5em);
         grid-template-columns: repeat(6, 11em);
