@@ -182,7 +182,7 @@
     grid-template-columns: repeat(2, 7em);
     grid-gap: 8px;
     margin-bottom: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .lista_cursos li{
@@ -456,6 +456,8 @@ footer h2{
         align-self: flex-start;
     }
     .princ_titulo{
+        line-height: 33px;
+        margin-bottom: 10px;
         font-size: 2em;
     }
 
@@ -489,7 +491,7 @@ footer h2{
     }
 }
 
-@media (min-width: 1140px){
+@media (min-width: 1200px){
     .rodape{
         padding: 5% 15px;
         text-align: left;
@@ -522,7 +524,13 @@ footer h2{
 
     .lista_cursos > .canto{
         grid-area: 1/4/span 2;
-        
+    }
+}
+
+@media (min-width: 1440px){
+    .lista_cursos{
+        grid-template-rows: repeat(2, 7.5em);
+        grid-template-columns: repeat(6, 11em);
     }
 }
 
