@@ -528,6 +528,12 @@ footer h2{
         grid-template-rows: repeat(2, 7.5em);
         grid-template-columns: repeat(6, 9.3em);
     }
+    
+    .lista_cursos li{
+        padding-top: 84px;
+        background-position: top 24px center;
+        background-size: 4em 4em;
+    }
 
     .lista_cursos > .bateria{
         grid-area: 1/1/span 2;
@@ -535,6 +541,12 @@ footer h2{
 
     .lista_cursos > .canto{
         grid-area: 1/4/span 2;
+    }
+
+    .lista_cursos > .canto{
+        background-size: 10em 10em;
+        background-position: top 70px center;
+        padding-top: 184px;
     }
 }
 
