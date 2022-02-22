@@ -240,6 +240,28 @@
     background-image: url("imagens/icone-cordas.svg")
 }
 
+.video{
+    text-align: center;
+    background-color: #2A3042;
+}
+
+.video_mobile{
+    width: 534px;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.video h1{
+    color: #E93D50;
+    margin-bottom: 10px;
+}
+.video p{
+    color: #fff;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+
+
 /*--Rodapé--*/
 
 footer h2{
