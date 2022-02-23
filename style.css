@@ -270,8 +270,8 @@
 
 /*--Sessão planos--*/
 .planos{
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     color: #2e4255;
     text-align: center;
     background-image: url("imagens/planos-background-mobile.png");
@@ -279,12 +279,14 @@
     background-size: cover;
     margin: 0px;
     padding: 15px 5%;
-    align-items: center;
+    /*align-items: center;*/
 }
 
-/*.planos h3, .planos p{
-    margin: 0px;
-}*/
+.planos_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .planos_card{
     color: #fff;
@@ -577,6 +579,14 @@ footer h2{
     .video p{
         font-size: 1em;
     }
+
+    .planos_container{
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
 }
 
 @media (min-width: 960px){
