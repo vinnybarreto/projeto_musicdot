@@ -108,11 +108,6 @@
     list-style: none;
 }
 
-.cabeçalho a{
-    text-decoration: none;
-    color: #fff;
-}
-
 .cabeçalho ul, .cursos ul, .conteudos ul, .lista_cursos{
     padding-left: 0px;
 }
@@ -143,6 +138,7 @@
     margin: 0px;
 }
 
+/*--Sessão cursos--*/
 .chamada_cursos{
     display: flex;
     flex-direction: column;
@@ -159,9 +155,7 @@
 .matricula_bt{
     display: inline-flex;
     background-color: #E93D50;
-    text-decoration: none;
     font-size: 0.8em;
-    color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 15px;
@@ -211,7 +205,6 @@
     background-image: url("imagens/icone-teclado-piano.svg");
 
 }
-
 .vio_guitarra{
     background-image: url("imagens/icones-violao-guitarra.svg");
 }
@@ -239,7 +232,9 @@
 .cordas{
     background-image: url("imagens/icone-cordas.svg")
 }
+/*------*/
 
+/*--Sessão vídeos--*/
 .video{
     text-align: center;
     background-color: #2A3042;
@@ -258,11 +253,100 @@
 .video h1{
     color: #E93D50;
     margin-bottom: 5px;
+    font-size: 1.2em;
+    padding: 0 5%;
 }
 .video p{
     color: #fff;
     margin: 0px;
-    padding-bottom: 15px;
+    font-size: 0.8em;
+    padding: 0 5% 15px;
+}
+
+.professores{
+    color: #fff;
+}
+/*------*/
+
+/*--Sessão planos--*/
+.planos{
+    display: flex;
+    flex-direction: column;
+    color: #2e4255;
+    text-align: center;
+    background-image: url("imagens/planos-background-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 15px 5%;
+    align-items: center;
+}
+
+/*.planos h3, .planos p{
+    margin: 0px;
+}*/
+
+.planos_card{
+    color: #fff;
+    background-color: #f76148;
+    border-radius: 8px;
+    margin-bottom: 1.3em;
+    padding: 4em 1em 2em;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.082);
+    background-size: 1.7em;
+    background-position: top 1.5em center;
+}
+
+.musical_withe{
+    background-image: url("imagens/simbolo-musidot-branco.svg");
+    background-repeat: no-repeat;
+}
+
+.musical_black{
+    background-image: url("imagens/simbolo-musidot-dark.svg");
+    background-repeat: no-repeat; 
+}
+
+.card_button{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: 0.8em;
+    background-color: #fff;
+    color: #f76148;
+    border-radius: 8px;
+    padding: 1em 2em;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.card_button:hover{
+    transform: translate(0, 3px);
+    transition: 0.25s;
+    background-color: #2A3042;
+    color: #fff;
+    
+}
+
+.planos_titulo{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.preço{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.valor{
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    margin-top: 0px;
+}
+
+#lingua{
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 
@@ -330,29 +414,6 @@ footer h2{
     font-weight: 600;
    }
 /*------*/
-
-/*--Utilitárias--*/
-
-.mar-top-15{
-    margin-top: 15px;
-}
-.mar-left-15{
-    margin-left: 15px;
-}
-.pad-left-15{
-    padding-left: 15px;
-}
-.mar-left-30{
-    margin-left: 30px;
-}
-.pad-left-30{
-    padding-left: 30px;
-}
-
-.tomate{
-    color: #E93D50;
-}
-
 
 /*--Midia querys--*/
 
@@ -505,6 +566,17 @@ footer h2{
         background-position: top 60px center;
         padding-top: 184px;
     }
+
+    .professores{
+        color: #E93D50;
+    }
+
+    .video h1{
+        font-size: 1.5em;
+    }
+    .video p{
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 960px){
@@ -596,6 +668,47 @@ footer h2{
         grid-template-rows: repeat(2, 7.5em);
         grid-template-columns: repeat(6, 11em);
     }
+}
+
+/*--Utilitárias--*/
+
+.mar-top-0{
+    margin-top: 0px;
+}
+.mar-bottom-0{
+    margin-bottom: 0px;
+}
+
+.mar-bottom-30{
+    margin-bottom: 30px;
+}
+
+.mar-top-15{
+    margin-top: 15px;
+}
+.mar-left-15{
+    margin-left: 15px;
+}
+.pad-left-15{
+    padding-left: 15px;
+}
+.mar-left-30{
+    margin-left: 30px;
+}
+.pad-left-30{
+    padding-left: 30px;
+}
+.mar-bottom-15{
+    margin-bottom: 15px;
+}
+
+.tomate{
+    color: #E93D50;
+}
+
+.ancora{
+    text-decoration: none;
+    color: #fff;
 }
 
 
