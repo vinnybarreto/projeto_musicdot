@@ -104,7 +104,7 @@
     padding: 1.5em 0px;
     width: 145px;
 }
-.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li{
+.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li, .vantagens li{
     list-style: none;
 }
 
@@ -180,8 +180,6 @@
 }
 
 .lista_cursos li{
-    /*display: flex;
-    align-items: center;*/
     border: 1px solid #4286f4;
     border-radius: 8px;
     background-repeat: no-repeat;
@@ -270,8 +268,6 @@
 
 /*--Sessão planos--*/
 .planos{
-    /*display: flex;
-    flex-direction: column;*/
     color: #2e4255;
     text-align: center;
     background-image: url("imagens/planos-background-mobile.png");
@@ -279,11 +275,25 @@
     background-size: cover;
     margin: 0px;
     padding: 15px 5%;
-    /*align-items: center;*/
+    position: relative;
+}
+
+/*Linha vermelha acima do quadro*/
+.planos::before{
+    content: "";
+    position: absolute;
+    width: 81%;
+    height: 0.1em;
+    background-color: #E93D50;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
 }
 
 .planos_chamada{
     margin-top: 0px;
+    margin-bottom: 40px;
     font-size: 1em;
 }
 
@@ -303,6 +313,7 @@
     background-size: 1.7em;
     background-position: top 1.5em center;
     transition: 0.25s;
+    position: relative;
 }
 
 .musical_withe{
@@ -334,6 +345,20 @@
     transition: 0.25s;
 }
 
+.plano_assina{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: white;
+    color: #f76148;
+    padding: 0.2em 0.5em;
+    border-radius: 6px 6px 0px 0px;
+    font-weight: 600;
+    position: absolute;
+    top: -26px;
+    left: 28%;
+
+}
+
 .planos_titulo{
     font-size: 1em;
     font-weight: 500;
@@ -354,6 +379,35 @@
 #lingua{
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+/*--Sessão vantagens--*/
+.vantagens{
+    text-align: center;
+    color: #2e4255;
+    font-size: 0.8em;
+}
+
+.vantagens_lista{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 0px 10%;
+}
+
+.vantagens_lista h3{
+    margin-bottom: 0px;
+}
+
+.vantagens_lista p{
+    margin-top: 5px;
+}
+
+.fig_vant_1{
+    background-image: url("imagens/icone-beneficios-tudo-para-voce.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5em 5em;
 }
 
 
@@ -585,11 +639,30 @@ footer h2{
         font-size: 1em;
     }
 
+    .planos{
+        background-image: url("imagens/planos-background.png");
+    }
+
     .planos_container{
         width: 80%;
         flex-direction: row;
         justify-content: space-evenly;
         margin: auto;
+    }
+
+    .plano_semestral{
+        order: 0;
+    }
+
+    .plano_anual{
+        order: 1;
+    }
+
+    .vantagens_lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 0px 10%;
     }
 
 }
@@ -607,7 +680,7 @@ footer h2{
 
 @media (min-width: 1200px){
     .rodape{
-        padding: 5% 15px;
+        padding: 5% 10%;
         text-align: left;
     }
     .end_social, .cursos, .conteudos, .novidades{
