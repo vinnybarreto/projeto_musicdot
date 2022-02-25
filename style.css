@@ -387,6 +387,12 @@
     color: #2e4255;
     font-size: 0.8em;
 }
+.vantagens_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 
 .vantagens_lista{
     display: grid;
@@ -405,6 +411,27 @@
 
 .fig_vant_1{
     background-image: url("imagens/icone-beneficios-tudo-para-voce.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5em 5em;
+}
+
+.fig_vant_2{
+    background-image: url("imagens/icone-beneficios-nenhuma-duvida.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5em 5em;
+}
+
+.fig_vant_3{
+    background-image: url("imagens/icone-beneficios-didatica-cuidadosa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 5em 5em;
+}
+
+.fig_vant_4{
+    background-image: url("imagens/icone-beneficios-online.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 5em 5em;
@@ -663,6 +690,10 @@ footer h2{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         padding: 0px 10%;
+    }
+
+    .vantagens_lista li{
+        background-color: #000;
     }
 
 }
