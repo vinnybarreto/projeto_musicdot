@@ -795,6 +795,18 @@ footer h2{
         width: 70%;
     }
 
+    .vantagens p{
+        font-size: 0.8em;
+    }
+
+    .vantagens li{
+        padding-top: 6.5em;
+        background-size: 6em 6em;
+    }
+    .vantagens_lista{
+        padding: 0px 15%;
+    }
+
 }
 
 @media (min-width: 1440px){
