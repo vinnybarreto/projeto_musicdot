@@ -431,6 +431,24 @@
 .fig_vant_4{
     background-image: url("imagens/icone-beneficios-online.svg");
 }
+/*------*/
+
+/*--Sessão chamada Youtube--*/
+
+.youtube{
+    background-color: #2A3042;
+    text-align: center;
+}
+
+.youtube h2{
+    color: #E93D50;
+}
+
+.youtube p{
+    color: #fff;
+}
+
+
 
 
 /*--Rodapé--*/
