@@ -152,23 +152,25 @@
     margin-bottom: 0px;
 }
 
-.matricula_bt{
-    display: inline-flex;
+.red_button{
     background-color: #E93D50;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 15px;
-    margin: 8px 0px;
     border-radius: 6px;
     transition: 0.25s; /*tempo de retorno a posição normal*/
 }
 
-.matricula_bt:hover{
+.red_button:hover{
     transform: translate(0, 3px); /*deslocamento do botão*/
     transition: 0.25s; /*tempo de deslocamento no eixo Y*/
 }
 
+.matricula_bt{
+    display: inline-flex;
+    margin: 8px 0px;
+}
 
 .lista_cursos{
     display: grid;
@@ -436,16 +438,41 @@
 /*--Sessão chamada Youtube--*/
 
 .youtube{
-    background-color: #2A3042;
+    position: relative;
+    background-color: #2e4555;
     text-align: center;
 }
 
+.youtube::before{
+    content: "";
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-image: url("imagens/icone-youtube.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: -24px;
+    right: 50%;
+
+}
+
 .youtube h2{
+    margin: 0px;
     color: #E93D50;
+    font-size: 1.3em;
+    padding: 30px 5% 0 5%;
 }
 
 .youtube p{
+    margin: 0px;
     color: #fff;
+    font-size: 0.7em;
+    padding: 5px 5%;
+}
+
+.canal_bt{
+    display: inline-block;
+    margin:10px 0px 20px;
 }
 
 
