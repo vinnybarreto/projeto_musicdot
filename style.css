@@ -401,6 +401,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     padding: 0px 10%;
+    margin-bottom: 30px;
 }
 
 .vantagens_lista li{
@@ -452,6 +453,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     top: -24px;
+    transform: translate(50%, 0);
     right: 50%;
 
 }
@@ -736,6 +738,22 @@ footer h2{
         padding: 0px 10%;
     }
 
+    .youtube::before{
+        width: 4.5em;
+        height: 4.5em;
+        top: -36px
+
+    }
+    
+    .youtube h2{
+        font-size: 1.5em;
+        padding-top: 45px;
+    }
+    
+    .youtube p{
+        font-size: 0.9em;
+    }
+
 }
 
 @media (min-width: 960px){
@@ -850,6 +868,22 @@ footer h2{
     }
     .vantagens_lista{
         padding: 0px 15%;
+    }
+
+    .youtube::before{
+        width: 6em;
+        height: 6em;
+        top: -47px
+
+    }
+    
+    .youtube h2{
+        font-size: 2em;
+        padding-top: 60px;
+    }
+    
+    .youtube p{
+        font-size: 1em;
     }
 
 }
