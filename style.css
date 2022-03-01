@@ -479,9 +479,15 @@
     margin:10px 0px 20px;
 }
 
-.links_videos{
+/*.links_videos{
     display: flex;
     flex-direction: column;
+}*/
+
+.links_videos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .video1, .video2{
@@ -796,6 +802,17 @@ footer h2{
     
     .youtube p{
         font-size: 0.9em;
+    }
+
+    /*.links_videos{
+        display: flex;
+        flex-direction: row;
+    }*/
+
+    .links_videos{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
