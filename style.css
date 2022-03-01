@@ -438,10 +438,12 @@
 
 /*--Sessão chamada Youtube--*/
 
-.youtube{
-    position: relative;
+.canal_youtube{
     background-color: #2e4555;
     text-align: center;
+}
+.youtube{
+    position: relative;
 }
 
 .youtube::before{
@@ -477,6 +479,39 @@
     margin:10px 0px 20px;
 }
 
+.links_videos{
+    display: flex;
+    flex-direction: column;
+}
+
+.video1, .video2{
+    font-size: 0.7em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+
+.video1{
+    /*position: relative;*/
+   background-image: url("imagens/videos-thumbnail-video1.png");
+}
+
+.video1:before, .video2:before{
+    content: "";
+    display: block;
+    /*position: absolute;*/
+    background-image: url("imagens/play-button.svg");
+    background-size: 100%;
+    width: 3em;
+    height: 3em;
+    margin: auto;
+
+}
+
+.video2{
+    /*position: relative;*/
+    background-image: url("imagens/videos-thumbnail-video2.png");
+}
 
 
 
