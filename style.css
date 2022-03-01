@@ -485,10 +485,19 @@
 }
 
 .video1, .video2{
-    font-size: 0.7em;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5%;
+    padding: 8% 5%;
+}
+
+.links_videos h2{
+    font-size: 0.9em;
+    margin: 20px 0px 7px;
+}
+
+.links_videos p{
+    font-size: 0.7em;
+    margin: 0px 15px;
 }
 
 .video1{
