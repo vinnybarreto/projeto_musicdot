@@ -479,11 +479,6 @@
     margin:10px 0px 20px;
 }
 
-/*.links_videos{
-    display: flex;
-    flex-direction: column;
-}*/
-
 .links_videos{
     display: grid;
     grid-template-columns: 1fr;
@@ -507,26 +502,81 @@
 }
 
 .video1{
-    /*position: relative;*/
    background-image: url("imagens/videos-thumbnail-video1.png");
 }
 
 .video1:before, .video2:before{
     content: "";
     display: block;
-    /*position: absolute;*/
     background-image: url("imagens/play-button.svg");
     background-size: 100%;
     width: 3em;
     height: 3em;
     margin: auto;
-
 }
 
 .video2{
-    /*position: relative;*/
     background-image: url("imagens/videos-thumbnail-video2.png");
 }
+
+/*--Sessão Aplicativos--*/
+
+.aplicativos{
+    background-color: #f76148;
+    color: #fff;
+    padding: 2em 5%;
+    text-align: center;
+    
+}
+
+.aplicativos h1{
+    margin: 0px;
+    font-size: 1.1em;
+}
+
+.aplicativos p{
+    font-size: 0.9em;
+}
+
+.app_display{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.app_btn{
+    /*width: 93px;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #E93D50;
+    background-color: #fff;
+    font-size: 0.7em;
+    font-weight: 600;
+    border-radius: 4px;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    background-repeat: no-repeat;
+    background-size: 1.8em;
+    
+
+}
+.android{
+    background-image: url("imagens/icone-android-logo.svg");
+    text-align: right;
+    background-position: left 0.5em center;
+    padding-left: 2.8em;
+    padding-right: 0.5em;
+}
+
+.apple{
+    background-image: url("imagens/icone-apple-logo.svg");
+    background-position: left 2.2em center;
+    padding-left: 4.5em;
+    padding-right: 2.5em;
+}
+
+
 
 
 
