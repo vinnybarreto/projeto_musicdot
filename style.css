@@ -357,7 +357,7 @@
     font-weight: 600;
     position: absolute;
     top: -26px;
-    left: 28%;
+    left: 27%;
 
 }
 
@@ -503,7 +503,7 @@
 
 .links_videos p{
     font-size: 0.7em;
-    margin: 0px 15px;
+    margin: 0px;
 }
 
 .video1{
@@ -945,6 +945,28 @@ footer h2{
     
     .youtube p{
         font-size: 1em;
+    }
+
+    .links_videos{
+        text-align: left;
+    }
+
+    .video1, .video2{
+        padding: 10% 18% 5% 18%;
+    }
+
+
+    .links_videos h2{
+        font-size: 1.2em;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 3%;
+        
+    }
+    .links_videos p{
+        font-size: 0.9em;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
 }
