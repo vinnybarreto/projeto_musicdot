@@ -2,87 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*página sobre*/
-.sb_body{
-    max-width: 940px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-    color: #3D3D3D;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.5em;
-}
-
-.sb_tit{
-    background-color: #E1EDF2;
-    padding: 10px;
-}
-
-.sb_subtit{
-    border-bottom: 2px solid black;
-}
-.img_sb{
-    text-align: center;
-    background-color: whitesmoke;
-    color: rgb(133, 128, 128);
-    margin: 30px;
-    padding: 15px;
-}
-
-.img_sb img{
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.matriz{
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.familia{
-    max-width: 275px;
-    float: right;
-
-}
-.disp_inl{
-    display: inline;
-}
-
-.cont_disp{
-    display: flex;
-}
-
-.sb_fot{
-    padding: 1.75em 0px;
-    font-size: 1.1em;
-}
-
-.sb_fot img{
-    width: 96px;
-}
-
-.ender{
-    margin-left: 15px;
-}
-
-.telefs{
-    margin-left: 30px;  
-}
-
-.contato{
-    margin-top: 15px;
-    padding-left: 30px;
-    margin-bottom: 0px;
-}
-.jurid{
-    margin-top: 0px;
-}
-
-.copy{
-    display: inline;
-    padding-left: 15px;
-}
-
 /*---Página index---*/
 
 .ind_body{
@@ -104,11 +23,11 @@
     padding: 1.5em 0px;
     width: 145px;
 }
-.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li, .vantagens li{
+.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li, .vantagens li, .cabe_cursos li{
     list-style: none;
 }
 
-.cabeçalho ul, .cursos ul, .conteudos ul, .lista_cursos{
+.cabeçalho ul, .cursos ul, .conteudos ul, .lista_cursos, .cabe_cursos ul{
     padding-left: 0px;
 }
 
@@ -581,10 +500,6 @@
     padding-right: 2.5em;
 }
 
-
-
-
-
 /*--Rodapé--*/
 
 footer h2{
@@ -649,6 +564,99 @@ footer h2{
     font-weight: 600;
    }
 /*------*/
+
+
+/*página sobre*/
+.sb_body{
+    max-width: 940px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    color: #3D3D3D;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.sb_tit{
+    background-color: #E1EDF2;
+    padding: 10px;
+}
+
+.sb_subtit{
+    border-bottom: 2px solid black;
+}
+.img_sb{
+    text-align: center;
+    background-color: whitesmoke;
+    color: rgb(133, 128, 128);
+    margin: 30px;
+    padding: 15px;
+}
+
+.img_sb img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.matriz{
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.familia{
+    max-width: 275px;
+    float: right;
+
+}
+.disp_inl{
+    display: inline;
+}
+
+.cont_disp{
+    display: flex;
+}
+
+.sb_fot{
+    padding: 1.75em 0px;
+    font-size: 1.1em;
+}
+
+.sb_fot img{
+    width: 96px;
+}
+
+.ender{
+    margin-left: 15px;
+}
+
+.telefs{
+    margin-left: 30px;  
+}
+
+.contato{
+    margin-top: 15px;
+    padding-left: 30px;
+    margin-bottom: 0px;
+}
+.jurid{
+    margin-top: 0px;
+}
+
+.copy{
+    display: inline;
+    padding-left: 15px;
+}
+/*------*/
+
+/*-- Página Cursos --*/
+
+.cabe_cursos{
+    margin: 0px;
+    color: #fff;
+    background-color: #343a40;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 /*--Midia querys--*/
 
