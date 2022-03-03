@@ -4,7 +4,7 @@
 
 /*---Página index---*/
 
-.ind_body{
+.ind_body, .curs_body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -651,10 +651,33 @@ footer h2{
 /*-- Página Cursos --*/
 
 .cabe_cursos{
-    margin: 0px;
-    color: #fff;
+    display: flex;
     background-color: #343a40;
-    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+.cabe_cursos a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cabe_cursos a:hover{
+    color: #fff;
+}
+
+.cabe_cursos img{
+    padding: 1em 0px;
+    width: 125px;
+}
+
+.curs_menu{
+    display: flex;
+    margin: 0px;
+}
+
+.curs_menu li{
+    padding: 1.2em;
 }
 
 
