@@ -719,7 +719,7 @@ footer h2{
     } 
 }
 
-@media (min-width: 850px){
+@media (min-width: 768px){
     .navega{
         height: 80px;
         display: flex;
@@ -884,7 +884,6 @@ footer h2{
         background-image: url("imagens/mockup-app.png");
         background-size: cover;
         background-repeat: no-repeat;
-        align-self: right;
     }
 
     .aplicativos h1{
@@ -1047,6 +1046,36 @@ footer h2{
         font-size: 0.9em;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .aplicativos{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        padding: 2em 20%;
+
+    }
+
+    .img_app{
+        height: 360px;
+        width: 208px;
+        background-image: url("imagens/mockup-app.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .aplicativos h1{
+        font-size: 1.8em;
+    }
+    .aplicativos p{
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .app_btn{
+        font-size: 0.9em;
+        font-weight: 700;
     }
 
 
