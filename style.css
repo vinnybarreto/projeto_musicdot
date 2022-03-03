@@ -536,6 +536,7 @@
 
 .aplicativos p{
     font-size: 0.9em;
+    margin-bottom: 25px;
 }
 
 .app_display{
@@ -545,7 +546,6 @@
 }
 
 .app_btn{
-    /*width: 93px;*/
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -558,9 +558,14 @@
     padding-bottom: 1.2em;
     background-repeat: no-repeat;
     background-size: 1.8em;
-    
-
+    transition: 0.25s;
 }
+
+.app_btn:hover{
+    transform: translate(0px, 3px);
+    transition: 0.25s;
+}
+
 .android{
     background-image: url("imagens/icone-android-logo.svg");
     text-align: right;
@@ -865,6 +870,31 @@ footer h2{
         grid-template-columns: 1fr 1fr;
     }
 
+    .aplicativos{
+        display: grid;
+        grid-template-columns: 222px 1fr;
+        align-items: center;
+        padding: 2em 20%;
+
+    }
+
+    .img_app{
+        height: 360px;
+        width: 208px;
+        background-image: url("imagens/mockup-app.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-self: right;
+    }
+
+    .aplicativos h1{
+        font-size: 1.5em;
+    }
+    .aplicativos p{
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 960px){
@@ -1018,6 +1048,7 @@ footer h2{
         margin-left: 5%;
         margin-right: 5%;
     }
+
 
 }
 
