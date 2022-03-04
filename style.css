@@ -23,11 +23,11 @@
     padding: 1.5em 0px;
     width: 145px;
 }
-.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li, .vantagens li, .cabe_cursos li{
+.cabeçalho li, .cursos li, .conteudos li, .lista_cursos li, .vantagens li, .cabe_cursos li, .curs_mob li{
     list-style: none;
 }
 
-.cabeçalho ul, .cursos ul, .conteudos ul, .lista_cursos, .cabe_cursos ul{
+.cabeçalho ul, .cursos ul, .conteudos ul, .lista_cursos, .cabe_cursos ul, .curs_mob ul{
     padding-left: 0px;
 }
 
@@ -652,11 +652,26 @@ footer h2{
 
 .cabe_cursos{
     display: flex;
-    background-color: #343a40;
+    background-color: #2A3042;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10%;
+    padding: 0px 5%;
 }
+
+.menu_btn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #E93D50;
+    color: #2A3042;
+    cursor: pointer;
+}
+
+.menu_btn ion-icon{
+    vertical-align: middle;
+}
+
 .cabe_cursos a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
@@ -672,12 +687,20 @@ footer h2{
 }
 
 .curs_menu{
-    display: flex;
-    margin: 0px;
+    display: none;
 }
 
 .curs_menu li{
     padding: 1.2em;
+}
+
+.curs_mob {
+}
+
+.curs_mob a{
+    text-decoration: none;
+    color: #000;
+    /*color: rgba(255, 255, 255, 0.5);*/
 }
 
 
@@ -924,6 +947,19 @@ footer h2{
         font-weight: 300;
         font-size: 1em;
         line-height: 30px;
+    }
+
+    .curs_menu{
+        display: flex;
+        margin: 0px;
+    }
+
+    .cabe_cursos{
+        padding: 0px 10%;
+    }
+
+    .menu_btn{
+        display: none;
     }
 }
 
