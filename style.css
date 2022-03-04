@@ -666,6 +666,7 @@ footer h2{
     background-color: #E93D50;
     color: #2A3042;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .menu_btn ion-icon{
@@ -695,12 +696,26 @@ footer h2{
 }
 
 .curs_mob {
+    display: block;
+    width: 240px;
+    height: 100vh;
+    background-color:  #2A3042;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 900;
+    padding: 80px 30px 30px;
+    transition: all 0.2s ease-out;
 }
 
 .curs_mob a{
     text-decoration: none;
-    color: #000;
-    /*color: rgba(255, 255, 255, 0.5);*/
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 60px;
+}
+
+.curs_mob a:hover{
+    color: #fff
 }
 
 
@@ -958,7 +973,7 @@ footer h2{
         padding: 0px 10%;
     }
 
-    .menu_btn{
+    .menu_btn, .curs_mob{
         display: none;
     }
 }
