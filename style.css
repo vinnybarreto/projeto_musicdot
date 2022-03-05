@@ -709,11 +709,16 @@ footer h2{
 }
 
 .overlay_mob{
+    display: none;
     width: 100%;
     height: 100vh;
     position: fixed;
     background-color: rgba(233, 61, 81, 0.95);
     z-index: 1000;
+}
+
+.overlay_open{
+    display: block;
 }
 
 .menu_mob a{
