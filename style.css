@@ -702,10 +702,17 @@ footer h2{
     background-color:  #2A3042;
     position: fixed;
     top: 0;
-    right: 0;
     z-index: 1200;
     padding: 80px 30px 30px;
     transition: all 0.2s ease-out;
+}
+
+.menu_mob_open{
+    right: 0px;
+}
+
+.menu_mob_close{
+    right: -300px;
 }
 
 .overlay_mob{
